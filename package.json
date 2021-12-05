@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "readme.generator.github.io",
+  "description": "[How to create a Professional README](./readme-guide.md)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnikhil84/readme.generator.github.io.git"
+  },
+  "author": "Nikhil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnikhil84/readme.generator.github.io/issues"
+  },
+  "homepage": "https://github.com/nnikhil84/readme.generator.github.io#readme"
+}
