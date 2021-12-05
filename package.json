@@ -1,12 +1,18 @@
 {
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "electron": "^16.0.4",
+    "electron-html-to": "^2.6.0",
+    "inquirer": "^8.2.0",
+    "markdown-js": "^0.0.4",
+    "open": "^8.4.0",
+    "pdfkit": "^0.13.0"
   },
   "name": "readme.generator.github.io",
   "description": "[How to create a Professional README](./readme-guide.md)",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
