@@ -24,7 +24,7 @@
 
 ## Sample Readme File
 
-![Sample File](/sample-readme.md)
+[Sample File](/sample-readme.md)
 
 ## Link of git hub repository
 
