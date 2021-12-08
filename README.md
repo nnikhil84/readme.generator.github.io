@@ -16,20 +16,18 @@
 * Constant to stringify the data entered
 * Constant to display template Readme.md file
 * Using fs to write sample Readme file
+* Ran the code to create a sample readme file and a walkthrough video of same
 
 
 ## Image of refactored website
-![Webpage Screenshot](/assets/images/code-refactor-assignment1.png)
+![Readme Sample](/assets/images/readme-generator-sample.mov)
 
-## Link of deployed application
+## Sample Readme File
 
-* https://nnikhil84.github.io/horesion.github.io/ 
+![Sample File](/sample-readme.md)
 
 ## Link of git hub repository
 
-* https://github.com/nnikhil84/horesion.github.io
+* https://github.com/nnikhil84/readme.generator.github.io
 
-## Resources used
-* figure attributes: W3 Schools  https://www.w3schools.com/howto/howto_css_blurred_background.asp and https://www.w3schools.com/accessibility/accessibility_labels.php 
-* empty alt attributes: University of Toronto Boot Camp Material https://courses.bootcampspot.com/courses/762/pages/1-dot-4-4-add-new-icon-images?module_item_id=275804
 
