@@ -20,7 +20,7 @@
 
 
 ## Image of refactored website
-![Readme Sample](/assets/images/readme-generator-sample.mov)
+![Readme Sample](/assets/images/readme-generator-sample.gif)
 
 ## Sample Readme File
 
