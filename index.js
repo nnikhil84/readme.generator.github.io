@@ -11,7 +11,7 @@ const port = 3001;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
-  res.end("Hello World");
+  res.end("Hello World!");
 });
 
 server.listen(port, () => {
@@ -43,7 +43,7 @@ const questions =
 ];
 
 inquirer.prompt(questions).then((answers) => {
-  // call getGitHubProfileInfo function
+  // Call back function
   console.log(JSON.stringify(answers, null, '  '));
   getGitHubProfileInfo(
     answers.ghubUsername,
@@ -53,24 +53,24 @@ inquirer.prompt(questions).then((answers) => {
   );
 });
 
-// Function for retrieving user GitHub Profile information based on their responses
-async function getGitHubProfileInfo(user, email, repo, title) {
-  // Use axios to make an API call to retrieve the user's GitHub information
-  const { data } = await axios.get(`https://api.github.com/users/${user}`);
+// Function to retrieve user's GitHub Profile information based on responses
+async function getGitHubProfileInfo(username, email, repository, title) {
+  // Using axios to make an API call to retrieve the user's GitHub information
+  const { data } = await axios.get(`https://api.github.com/users/${username}`);
 
   data.email = email;
 
-  // Generate a URL for their GitHub profile based on the response
-  const repoURL = `https://github.com/${user}/${repo}`;
+  // Generate a URL for GitHub profile based on the response
+  const repoURL = `https://github.com/${username}/${repository}`;
 
   console.log("Data: ", data);
   console.log("Repo URL: ", repoURL);
   console.log("Project Title: ", title);
 
-  // Turn the results into a string
+  // Convert data to string
   const stringData = JSON.stringify(data, null, "  ");
 
-  // Variable containing code for readme template to be generated
+  // Constant with template Readme
   const result = `
 # Title: ${title} 
 ## Project Description 
@@ -88,17 +88,15 @@ async function getGitHubProfileInfo(user, email, repo, title) {
 * GitHub repository: ${repoURL}
 `;
 
-  // Log results
   console.log(result);
 
-  // Write to a readme file
-  fs.writeFile("readmetemplate.md", result, function (err) {
+  // Create a sample readme file
+  fs.writeFile("sample-readme.md", result, function (err) {
     if (err) return console.log(err);
   });
 
   console.log(data.avatar_url);
 
-  // Close server when complete
   server.close();
 }
 
